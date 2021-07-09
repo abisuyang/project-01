@@ -1,0 +1,121 @@
+/*for mobile devices*/
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+a {
+    color: rgb(230, 26, 26);
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+/* column design for mobile phones starts here */
+[class*="col-"] {
+    float: left;
+    padding: 10px;
+}
+
+/*for mobile*/
+[class*="col-"] {
+    width: 100%;
+}
+
+/* column design for mobile phones ends here */
+
+
+/* navbar design starts here  */
+.navbar {
+    background-color: rgb(59, 17, 209);
+    padding: 1% 7%;
+    text-align: center;
+}
+
+.nav-heading h1 {
+    color: white;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+.nav-menu a {
+    background-color: yellow;
+    border-radius: 10px;
+    margin: 7px 0px;
+    padding: 10px;
+}
+
+.nav-menu a:hover {
+    background-color: tomato;
+}
+
+.navbar::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.nav-logo img {
+    width: 50px;
+    height: 60px;
+}
+
+/* navbar design ends here  */
+
+
+
+/* profile design starts here  */
+.top-icon {
+    position: absolute;
+    right: 60px;
+    top: 20px;
+    transition: transform 2s;
+    width: 120px;
+    height: 180px;
+    padding-top: 100px;
+    margin-left: 100px;
+}
+
+.top-icon:hover {
+    transform: rotate(360deg);
+}
+
+.profile-desc h1 {
+    font-family: 'Satisfy', cursive;
+    font-size: 3rem;
+    padding-top: 150px;
+}
+
+.profile-desc p {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+}
+
+.bottom-weather-icon {
+    position: absolute;
+    left: 60px;
+    bottom: 10px;
+    transition: transform 5s;
+    width: 120px;
+    height: 160px;
+
+}
+
+.bottom-weather-icon:hover {
+    transform: rotate(360deg);
+}
